@@ -1,0 +1,135 @@
+:root {
+  color-scheme: light dark;
+}
+
+
+/* General container for services section */
+.services {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Space between the boxes */
+    justify-content: center; /* Center the boxes horizontally */
+    padding: 20px;
+    max-width: 1200px; /* Widen the container */
+    margin: 0 auto; /* Center the section */
+}
+
+/* Individual service boxes */
+.service {
+    flex: 1 1 calc(45% - 20px); /* Smaller boxes side by side (45% width) */
+    max-width: calc(45% - 20px);
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text */
+    border: 1px solid #444; /* Slightly lighter gray border */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease; /* Add hover effect */
+}
+
+// .service:hover {
+//    transform: translateY(-5px); /* Lift on hover */
+// }
+
+/* Image inside each box */
+.service img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Header inside each box */
+.service h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #fff; /* Ensure header text is white */
+}
+
+/* Paragraph inside each box */
+.service p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd; /* Slightly lighter gray for the paragraph text */
+}
+
+.find-out-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: light-dark(#fff, #111); /* Button background */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.coming-soon {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: light-dark(#fff, #111); /* Gray background */
+    color: #777; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: not-allowed; /* Indicate it's inactive */
+    opacity: 0.8; /* Slight transparency */
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .service {
+        flex: 1 1 100%; /* Stack boxes on small screens */
+        max-width: 100%;
+    }
+}
+
+
+/* For Species-identification & About me pages */
+.content-with-image {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between the image and text */
+    margin: 20px 0;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.content-with-image img {
+    flex: 1 1 25%; /* Image takes up 25% of the width */
+    max-width: 25%; /* Prevent it from expanding beyond its container */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.content-with-image .text-content {
+    flex: 1 1 70%; /* Text takes up 70% of the width */
+    min-width: 300px; /* Prevent it from becoming too narrow */
+    /* color: #333; /* Adjust text color if needed */
+}
+
+.content-with-image h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content-with-image p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Ensure proper layout on smaller screens */
+@media (max-width: 768px) {
+    .content-with-image {
+        flex-direction: column; /* Stack image and text */
+    }
+
+    .content-with-image img {
+        max-width: 100%; /* Image takes full width */
+    }
+
+    .content-with-image .text-content {
+        min-width: unset; /* Remove minimum width */
+    }
+}
