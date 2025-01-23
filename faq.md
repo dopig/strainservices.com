@@ -40,7 +40,7 @@ Even if your strain falls into the latter category, we can guide you through the
 <br/><br/>
 
 ## *What are your rates?*
-Contact us to discuss your project and receive a customized quote.
+Contact us at [{{ site.email }}](mailto:{{ site.email }}) to discuss your project and receive a customized quote.
 <br/><br/>
 
 # References

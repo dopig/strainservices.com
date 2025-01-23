@@ -10,7 +10,7 @@ title: Species Identification
             <h1>Species Identification</h1>
             <p>Our advanced tools provide precise bacterial species identification using the latest, most rigorous techniques. Whether you’re working with environmental samples, industrial strains, or clinical isolates, we provide accurate and actionable results from your genome-sequenced samples.</p>
             <p>If you don't have a genome-sequenced sample (yet), let us know! We would love to talk through the next steps with you.</p>
-            <p>Find out more about our offerings on the <a href="faq.html">FAQ</a> page.</p>
+            <p>Find out more about our offerings by checking out the <a href="faq.html">FAQ</a> page or emailing us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
         </div>
     </div>
 
