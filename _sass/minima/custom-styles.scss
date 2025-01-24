@@ -2,7 +2,6 @@
   color-scheme: light dark;
 }
 
-
 /* General container for services section */
 .services {
     display: flex;
@@ -86,8 +85,12 @@
     }
 }
 
-
 /* For Species-identification & About me pages */
+.image-page-content {
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove default margin */
+}
+
 .content-with-image {
     display: flex;
     align-items: flex-start; /* Align items to the top */
@@ -106,7 +109,6 @@
 .content-with-image .text-content {
     flex: 1 1 70%; /* Text takes up 70% of the width */
     min-width: 300px; /* Prevent it from becoming too narrow */
-    /* color: #333; /* Adjust text color if needed */
 }
 
 .content-with-image h1 {
@@ -126,10 +128,13 @@
     }
 
     .content-with-image img {
-        max-width: 100%; /* Image takes full width */
+        order: 2;
+        width: 100%; /* Make image full width on mobile */
+        max-width: 100%; /* Ensure it doesn't exceed container */
     }
 
     .content-with-image .text-content {
+        order: 1;
         min-width: unset; /* Remove minimum width */
     }
 }

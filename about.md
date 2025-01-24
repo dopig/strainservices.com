@@ -5,7 +5,7 @@ title: About
 
 # About
 
-<div class="page-content">
+<div class="image-page-content">
     <div class="content-with-image">
         <img src="/assets/images/dah.jpg" alt="Douglas Higgins">
         <div class="text-content">

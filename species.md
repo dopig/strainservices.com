@@ -3,7 +3,7 @@ layout: base
 title: Species Identification
 ---
 
-<div class="page-content">
+<div class="image-page-content">
     <div class="content-with-image">
         <img src="/assets/images/sky-plate.jpg" alt="Species Identification">
         <div class="text-content">
