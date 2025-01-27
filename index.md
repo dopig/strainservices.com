@@ -33,4 +33,4 @@ Providing species and microbiome analysis services for regulatory and research n
     </div>
 </div>
 
-[Learn More](about.md) or [Contact Us](contact.md) today!
+Learn more on the [FAQ](faq.md) or [About Us](about.md) pages or by [Contacting Us](contact.md) today!
